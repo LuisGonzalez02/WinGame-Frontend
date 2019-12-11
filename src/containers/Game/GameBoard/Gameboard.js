@@ -169,6 +169,7 @@ class Gameboard extends Component {
         if (response3.ok) {
             const info = await response3.json()
             if (info.message == "Not in Game") {
+                console.log("still searching")
                 clearInterval(this.timers);
                 let previousSquares = this.state.squares.map(square => ({ ...square }))
                 for (let i = 0; i < 9; i++) {

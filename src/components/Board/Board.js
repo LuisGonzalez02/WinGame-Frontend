@@ -1,7 +1,6 @@
 import React from 'react'
 import TicTacToeButton from '../TicTacToeButton/TicTacToeButton';
 import { Col, Row, Container } from 'react-bootstrap';
-import LoadingSpinner from '../UI/LoadingSpinner/LoadingSpinner'
 
 const board = (props) => (
     <React.Fragment>
